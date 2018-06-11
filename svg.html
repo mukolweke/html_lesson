@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>svg examples</title>
+    <style>
+        #cy_polygon {
+            position: relative;
+            left: 20%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            fill: green;
+        }
+        #cy_ellipse{
+            position: relative;
+            left: 20%;
+            -webkit-transform: translateX(-40%);
+            -ms-transform: translateX(-40%);
+            transform: translateX(-40%);
+            fill: black;
+        }
+        #cy_rectangle {
+            position: relative;
+            left: 20%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            fill:yellow;
+        }
+    </style>
+</head>
+<body>
+<h2>Polygon</h2>
+
+<svg id = "cy_polygon" height = "200" xmlns = "http://www.w3.org/2000/svg">
+    <polygon  points = "20,10 300,20, 170,50" />
+</svg>
+<h2>Ellipse</h2>
+
+<svg id = "cy_ellipse" height = "200" xmlns = "http://www.w3.org/2000/svg">
+    <ellipse cx = "100" cy = "50" rx = "100" ry = "50"/>
+</svg>
+
+<h2>Rectangle</h2>
+
+<svg id = "cy_rectangle" height = "200" xmlns = "http://www.w3.org/2000/svg">
+    <rect id = "redrect" width = "300" height = "100"/>
+</svg>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML CLASS</title>
+</head>
+<body>
+<h1>Google map example;Cytonn the chancery</h1>
+
+<div id="map" style="width:400px;height:400px;"></div>
+
+<script>
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(-1.292342,36.806052),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.DEFAULT
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</body>
+</html>
